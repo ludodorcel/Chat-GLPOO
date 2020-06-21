@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>24</x>
+      <y>264</y>
+      <w>232</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>User
+--
++user_id: Integer
++user_role_id: Integer
++user_name: String
++user_address: String
++user_conversations: ArrayList&lt;ChatRoom&gt;
+--
++addUser()
++editUser()
++deleteUser()
++searchUser()
++createRoom()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>536</x>
+      <y>256</y>
+      <w>200</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>ChatRoom
+--
++chatID: Integer
++users: ArrayList&lt;User&gt;
++host: User
++messageHistory: ArrayList&lt;Integer&gt;
++dateCreation: String
++name: String
+--
++addUser()
++deleteUser()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>64</x>
+      <y>472</y>
+      <w>144</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Message
+--
++id: int
++emetteur: User
++texte: String
++date: String
++chatRoom: ChatRoom
+--
++sendMessage()
++deleteMessage()
++showMessage()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>104</y>
+      <w>136</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Role
+--
++role_id: Integer
++role_title: String
++role_description: String
+--
++addRole()
++editRole()
++deletRole()
++assignRole()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>128</x>
+      <y>416</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+use</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>128</x>
+      <y>152</y>
+      <w>80</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>296</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+r1=*
+m1=user
+r2=chatroom
+m2=1</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>336</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+r1=chatroom
+m1=1
+r2=1..*
+m2=user</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>648</x>
+      <y>32</y>
+      <w>88</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lw=2
+ActiveClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>296</x>
+      <y>296</y>
+      <w>120</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;abstract&gt;&gt;/
+AbstractChatRoom
+--
++addUser()
++deleteUser()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>248</x>
+      <y>312</y>
+      <w>64</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+use</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>

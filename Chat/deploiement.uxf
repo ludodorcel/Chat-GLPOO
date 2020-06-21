@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>198</x>
+      <y>132</y>
+      <w>385</w>
+      <h>374</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;device&gt;&gt;
+Home Computer as Client</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>165</x>
+      <y>88</y>
+      <w>946</w>
+      <h>451</h>
+    </coordinates>
+    <panel_attributes>Deployment chat application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>253</x>
+      <y>209</y>
+      <w>286</w>
+      <h>253</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;execution environment&gt;&gt;
+Java Runtime Environment (JRE)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>671</x>
+      <y>132</y>
+      <w>385</w>
+      <h>374</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;device&gt;&gt;
+Home Computer as Server</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>726</x>
+      <y>198</y>
+      <w>286</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;execution environment&gt;&gt;
+Java Runtime Environment (JRE)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>308</x>
+      <y>308</y>
+      <w>154</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+Client.exe</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>792</x>
+      <y>308</y>
+      <w>154</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+Server.exe</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>572</x>
+      <y>363</y>
+      <w>121</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>594</x>
+      <y>341</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>TCP/IP
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
