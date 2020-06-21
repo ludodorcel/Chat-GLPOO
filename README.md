@@ -10,4 +10,4 @@ Discussion entre des utilisateurs sur un serveur en réseau local.
 
 – Compiler et lancer le Client.java dans une autre fenêtre.
 
-Les messages envoyés par le server sont reçus par le client et inversement. 
+Les messages envoyés par le serveur sont reçus par le client et inversement. 
